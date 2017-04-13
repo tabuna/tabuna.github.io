@@ -1,0 +1,223 @@
+/*
+ Base view
+*/
+body {
+    color: #343a40;
+    font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-size: 1.6em;
+    font-weight: 300;
+    letter-spacing: .01em;
+    line-height: 1.6;
+    padding: 5vh 0;
+    animation: blur 620ms;
+}
+
+@keyframes blur {
+    0%   { filter: blur(5px); }
+    25% { filter: blur(4px); }
+    50%   { filter: blur(3px); }
+    75% { filter: blur(2px); }
+    100% { filter: blur(1px); }
+}
+
+hr {
+    border-top: 0.1rem solid #ced4da;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+p {
+    text-align: justify;
+    line-height: 2em;
+}
+
+small{
+    font-size: 85%;
+}
+
+
+ul {
+    list-style: none;
+    border-left: 1px solid #ced4da;
+    padding-left: 1em;
+}
+
+footer {
+    max-width: 80rem;
+    margin: 0 auto 7.5rem auto;
+    text-align: right;
+    font-size: 0.85em;
+}
+
+footer a {
+    color: #343a40;
+}
+
+.icon {
+    margin-right: 0.5em;
+}
+
+.text-muted {
+    color: #868e96;
+}
+
+.hidden {
+    display: none;
+}
+
+a {
+    color: #748ffc;
+    text-decoration: none;
+    transition: 340ms;
+    outline: none;
+}
+
+.button, button, input[type='button'], input[type='reset'], input[type='submit'] {
+    background-color: #748ffc;
+    border: 0.1rem solid #748ffc;
+    transition: 340ms;
+}
+
+.wrapper {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.wrapper .container {
+    max-width: 80rem;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 112.0rem;
+    padding: 0 2.0rem;
+    position: relative;
+    width: 100%;
+}
+
+.wrapper > .container {
+    padding-bottom: 7.5rem;
+    padding-top: 7.5rem;
+}
+
+.padder-v {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+ul.circle {
+    border-left: none;
+    list-style: circle inside;
+}
+
+.opacity-scroll {
+    height: 10vh;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background-image: -webkit-gradient(
+            linear, left top, left bottom, from(rgba(255, 255, 255, 0.1)),
+            to(rgba(255, 255, 255, 0.75))
+    );
+}
+
+
+.print-show{
+    display: none;
+}
+
+.modaal-container{
+    max-width: 800px;
+}
+
+.modaal-container .container{
+    padding: 1.5rem 0;
+}
+
+
+.modaal-close:focus:after, .modaal-close:focus:before, .modaal-close:hover:after, .modaal-close:hover:before{
+    background: #343a40;
+}
+
+.inline img{
+    height: 220px;
+    object-fit: fill;
+    width: 100%;
+}
+
+.p-img{
+    height: 250px;
+    object-fit: cover;
+    width: 100%;
+    opacity: 0.9;
+    transition: 340ms;
+    border: 1px solid #dee5e7;
+    box-shadow: 0 2px 2px rgba(0,0,0,.05), 0 1px 0 rgba(0,0,0,.05);
+}
+.p-img:hover{
+    opacity: 1;
+}
+
+
+/*
+ Portfolio quick view
+*/
+@media print {
+
+    @page {
+        width: 100%;
+        margin: 0;
+    }
+
+    body {
+        padding: 2.5rem;
+        max-width: 80rem;
+    }
+
+    a:after {
+        content: " <" attr(href) ">"
+    }
+
+    a:link:after, a:visited:after {
+        content: " (" attr(href) ") ";
+        font-size: 80%;
+    }
+
+    .wrapper > .container {
+        padding-bottom: 1.5rem;
+        padding-top: 1.5rem;
+    }
+
+    img {
+        display: none;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    .column.column-50 {
+        width: 100%;
+    }
+
+    .print-hidden {
+        display: none;
+    }
+
+    .print-show{
+        display: block;
+    }
+
+    .pagebreak {
+        page-break-before: always;
+        margin-top: 5.5rem;
+    }
+
+}
