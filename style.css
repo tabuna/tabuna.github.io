@@ -47,6 +47,10 @@ ul {
     padding-left: 1em;
 }
 
+li {
+    text-align: justify;
+}
+
 footer {
     max-width: 80rem;
     margin: 0 auto 7.5rem auto;
