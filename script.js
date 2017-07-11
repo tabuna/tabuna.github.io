@@ -15,7 +15,7 @@ $(function () {
     $(window).blur(function() {
         focused = false;
         setTimeout(function() {
-            document.title = 'Не забудь о обо мне';
+            document.title = 'Не забудь обо мне';
         }, 100);
     });
 
