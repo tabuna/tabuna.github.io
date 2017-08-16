@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>Веб-разработчик Александр</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Резюме web разработчика">
     <meta name="keywords" content="Резюме web разработчика">
     <link rel="dns-prefetch" href="https://tabuna.github.io"/>
@@ -20,24 +21,14 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="theme-color" content="#e9ecef">
 
-
     <!-- Google Fonts -->
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic&subset=cyrillic">
-
-
-    <!-- CSS Reset -->
-    <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
-
-    <!-- Modal CSS -->
-    <link rel="stylesheet" href="/dist/css/modaal.min.css"/>
-
 
     <!-- Milligram CSS minified -->
     <link rel="stylesheet" href="//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">
     <link rel="stylesheet" href="/style.css">
 
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css"/>
 
 
 
@@ -76,6 +67,10 @@
                 часть, в&nbsp;проектах использую Jquery и&nbsp;VueJS, для поставки Bower или NPM, а&nbsp;сборщик Gulp
                 или WebPack. Знаком с&nbsp;приложениями на&nbsp;Express и&nbsp;попробовал Election, Cordova.
             </p>
+            <p>
+             Примеры моего кода можно увидеть, на <a href="https://github.com/tabuna"
+                                                                            target="_blank">GitHub</a>.
+            </p>
         </article>
         <!-- Hello text end-->
 
@@ -98,55 +93,6 @@
             </dl>
 
         </article>
-    </div>
-
-
-    <div class="container">
-
-        <!-- Article title-->
-        <article>
-            <h3><i class="icon icon-layers"></i> Примеры работ</h3>
-        </article>
-        <!-- Article title end-->
-
-
-        <!-- Portfolio-->
-        <article>
-            <div class="row">
-                <div class="column column-50">
-
-                    <p>
-                        <a href="#project-liptur" class="inline">
-                            <img alt="" src="/dist/img/liptur/main.png">
-                        </a>
-
-                    </p>
-
-
-                </div>
-                <div class="column column-50">
-
-
-                    <p>
-                        <a href="#project-cs" class="inline">
-                            <img alt="" src="/dist/img/cs/main2.png">
-                        </a>
-                    </p>
-
-                </div>
-
-            </div>
-
-        </article>
-        <!-- Portfolio end-->
-
-
-        <p>
-            Если хотите увидеть примеры кода, то я активный пользователь <a href="https://github.com/tabuna"
-                                                                            target="_blank">GitHub</a>.
-        </p>
-
-
     </div>
 
 
@@ -288,365 +234,6 @@
 
 <div class="opacity-scroll"></div>
 
-
-
-
-<article id="project-liptur"  class="hidden">
-
-
-
-    <h3>Липецкий туристский портал</h3>
-
-    <p>
-        Государственный заказ, который создан с целью популяризации области.
-    </p>
-
-    <p>
-        <a href="/dist/img/liptur/main.png" target="_blank" title="Изображения кликабельны">
-            <img src="/dist/img/liptur/main.png" alt="">
-        </a>
-    </p>
-
-    <p>
-        Техническое задание и требования разрабатывались мной, основной проблемой была
-        объединение различной информации в один каталог с возможностью легкого получения.
-    </p>
-
-
-    <p>
-
-        Каталог предполагает хранение большого объёма информации, структурированной разделами и подразделами, в которых объект,
-        обладая гибким набором атрибутов способен отражаться в сразу нескольких логических подразделах.
-
-    </p>
-
-
-    <div class="container">
-
-        <div class="row">
-            <div class="column">
-                <a href="/dist/img/liptur/1.png" target="_blank" title="Изображения кликабельны">
-                    <img src="/dist/img/liptur/1.png" class="p-img">
-                </a>
-            </div>
-            <div class="column">
-                <a href="/dist/img/liptur/2.png" target="_blank" title="Изображения кликабельны">
-                    <img src="/dist/img/liptur/2.png" class="p-img">
-                </a>
-            </div>
-        </div>
-    </div>
-
-
-    <p>
-        Для эффективного решения я отказался от EAV, в пользу JSON и сформировал единую модель данных.
-        Определение поведения той или иной записи происходит в зависимости от указанного типа.
-        Это позволило очень быстро вводить и изменять различные параметры, при этом сама запись может иметь отдельные свойства.
-    </p>
-
-
-
-    <div class="container">
-
-        <div class="row">
-            <div class="column">
-                <a href="/dist/img/liptur/3.png" target="_blank" title="Изображения кликабельны">
-                    <img src="/dist/img/liptur/3.png" class="p-img">
-                </a>
-            </div>
-            <div class="column">
-                <a href="/dist/img/liptur/4.png" target="_blank" title="Изображения кликабельны">
-                    <img src="/dist/img/liptur/4.png" class="p-img">
-                </a>
-            </div>
-        </div>
-    </div>
-
-
-    <p>
-        Каждая опция записи отражена в виде иконки на странице, при этом доступна фильтрация
-        записей по необходимым требованиям которые определяются типом записи, так же это может влиять
-        и на другие свойства, например: метка на карте или возможность бронирования номера.
-    </p>
-
-
-
-    <div class="container">
-
-        <div class="row">
-            <div class="column">
-                <a href="/dist/img/liptur/5.png" target="_blank" title="Изображения кликабельны">
-                    <img src="/dist/img/liptur/5.png" class="p-img">
-                </a>
-            </div>
-            <div class="column">
-                <a href="/dist/img/liptur/6.png" target="_blank" title="Изображения кликабельны">
-                    <img src="/dist/img/liptur/6.png" class="p-img">
-                </a>
-            </div>
-        </div>
-    </div>
-
-
-    <p>
-        Клиентская часть использует Bootstrap 3, а стили приложения написаны на less, за поставку пакетов отвечает npm, а за сборку
-        webpack. Вёрстка использует принципы атомарного стиля и модульной архитектуры.
-    </p>
-
-
-
-
-    <div class="container">
-
-        <div class="row">
-            <div class="column">
-                <a href="/dist/img/liptur/7.png" target="_blank" title="Изображения кликабельны">
-                    <img src="/dist/img/liptur/7.png" class="p-img">
-                </a>
-            </div>
-            <div class="column">
-                <a href="/dist/img/liptur/8.png" target="_blank" title="Изображения кликабельны">
-                    <img src="/dist/img/liptur/8.png" class="p-img">
-                </a>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="container">
-
-        <div class="row">
-            <div class="column">
-                <a href="/dist/img/liptur/9.png" target="_blank" title="Изображения кликабельны">
-                    <img src="/dist/img/liptur/9.png" class="p-img">
-                </a>
-            </div>
-            <div class="column">
-                <a href="/dist/img/liptur/10.png" target="_blank" title="Изображения кликабельны">
-                    <img src="/dist/img/liptur/10.png" class="p-img">
-                </a>
-            </div>
-        </div>
-    </div>
-
-
-
-    <p>
-        Одна из ранних версий
-    </p>
-
-    <iframe src="//vk.com/video_ext.php?oid=80382062&id=456239029&hash=9e32cf4934adeafc&hd=2" width="100%" height="480" frameborder="0" allowfullscreen></iframe>
-
-
-
-
-
-</article>
-
-
-<article id="project-cs"  class="hidden">
-
-
-
-    <h3>CS:GO Victory Game</h3>
-
-    <p>Представляет собой лотерейную площадку для игроков, позволяя делать ставки виртуальными предметами игры &laquo;<nobr>Counter-Strike</nobr>: Global Offensive&raquo;, где результат игры зависит от&nbsp;элемента случайности и&nbsp;суммы вклада</p>
-
-    <p>
-        <a href="/dist/img/cs/main2.png" target="_blank" title="Изображения кликабельны">
-            <img src="/dist/img/cs/main2.png" alt="">
-        </a>
-    </p>
-
-    <p>
-        Мною было написано техническое здание отображающую суть и требования проекта.
-    </p>
-
-    <dl>
-        <dd>Авторизация с помощью Steam</dd>
-        <dd>Выгрузка информации о каталоге предметов</dd>
-        <dd>Получение актуальных сведений о курсе валют</dd>
-        <dd>Парсинг веб-сайта и эмуляция поведения мобильного приложения</dd>
-        <dd>Фоновая работа приложения</dd>
-    </dl>
-
-
-    <p>
-        Основу для реализации взял на себя фреймворк Laravel,
-        где в качестве основного источника информации использовалась Redis база, так как
-        проект требовал обработки и отображения в реальном времени,
-        промежуточные и конечные результаты хранились MySQL.
-    </p>
-
-
-    <div class="container">
-
-        <div class="row">
-            <div class="column">
-                <a href="/dist/img/cs/3.png" target="_blank" title="Изображения кликабельны">
-                    <img src="/dist/img/cs/3.png" class="p-img">
-                </a>
-            </div>
-            <div class="column">
-                <a href="/dist/img/cs/4.png" target="_blank" title="Изображения кликабельны">
-                    <img src="/dist/img/cs/4.png" class="p-img">
-                </a>
-            </div>
-        </div>
-    </div>
-
-
-    <p>
-        Для постоянного обмена информацией использовался проект Ratchet от PHP React,
-        позволяющий иметь удобный веб-сокет на PHP, в последующем я обернул код в команду и вынес
-        в отдельную библиотеку <a href="https://github.com/TheOrchid/Socket" target="_blank">Socket</a>,
-        а веб-сервер настроил, что бы клиенты не общались с ним напрямую, а использовали NGINX proxy.
-        Для постоянного мониторинга и запуска использовал Supervisor.
-    </p>
-
-
-    <div class="container">
-
-        <div class="row">
-            <div class="column">
-                <a href="/dist/img/cs/5.png" target="_blank" title="Изображения кликабельны">
-                    <img src="/dist/img/cs/5.png" class="p-img">
-                </a>
-            </div>
-            <div class="column">
-                <a href="/dist/img/cs/6.png" target="_blank" title="Изображения кликабельны">
-                    <img src="/dist/img/cs/6.png" class="p-img">
-                </a>
-            </div>
-        </div>
-    </div>
-
-
-    <p>
-        Большую часть времени пользователь находиться на основной страницы, а остальные служили
-        как вспомогательные, я реализовал клиентскую часть как SPA на VueJS,
-        сначала на первой версии, но к концу проекта была полностью обновлена на вторую.
-        Как оказалось решение использовать фреимворк очень помогла со скоростью работы и контролем за состоянием,
-        что позволило обновлять данные только в модели, а данные представления подхватятся автоматически.
-        Интерфейс пользователя разработан я, за исключением изображений, для этого использовался Bootstrap 3 и
-        стили в виде связанных less файлов. За поставку пакетов отвечал bower, а за сборку Gulp.
-    </p>
-
-
-    <div class="container">
-
-        <div class="row">
-            <div class="column">
-                <a href="/dist/img/cs/7.png" target="_blank" title="Изображения кликабельны">
-                    <img src="/dist/img/cs/7.png" class="p-img">
-                </a>
-            </div>
-            <div class="column">
-                <a href="/dist/img/cs/8.png" target="_blank" title="Изображения кликабельны">
-                    <img src="/dist/img/cs/8.png" class="p-img">
-                </a>
-            </div>
-        </div>
-    </div>
-
-
-    <p>
-       Главные исполнительные роли в системе стали команды,
-        которые могли быть запущены и из консоли, так и со стороны веб-клиента.
-        Каждая команда отвечала за одно законченное действие, некоторые команды использовали
-        <a href="https://github.com/reactphp/event-loop" target="_blank">Событийную модель</a>
-        которая получала информацию либо как аргумент, или же из очереди задач.
-    </p>
-
-
-    <div class="container">
-
-        <div class="row">
-            <div class="column">
-                <a href="/dist/img/cs/9.png" target="_blank" title="Изображения кликабельны">
-                    <img src="/dist/img/cs/9.png" class="p-img">
-                </a>
-            </div>
-            <div class="column">
-                <a href="/dist/img/cs/10.png" target="_blank" title="Изображения кликабельны">
-                    <img src="/dist/img/cs/10.png" class="p-img">
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <p>
-        Серверная часть основана на стабильном выпуске Ubuntu 16.04 и PHP 7 версии.
-        Для большей скорости результата я изменил стандартные настройки у NGINX,
-        оптимизировал MySQL c помощью MySQLTuner.pl, уменьшил сброс данных на диск у Redis
-        (Так как промежуточная информация сохранялась), а OPcache настроил с максимальными показателями кеширования и обновления.
-        Для предоставления пользователям из разных стран использовал CDN CloudFlare
-    </p>
-
-
-    <div class="container">
-
-        <div class="row">
-            <div class="column">
-                <a href="/dist/img/cs/11.png" target="_blank" title="Изображения кликабельны">
-                    <img src="/dist/img/cs/11.png" class="p-img">
-                </a>
-            </div>
-            <div class="column">
-                <a href="/dist/img/cs/12.png" target="_blank" title="Изображения кликабельны">
-                    <img src="/dist/img/cs/12.png" class="p-img">
-                </a>
-            </div>
-        </div>
-    </div>
-
-
-
-    <p>
-        Выбирая такие технологии, больше всего сомнений приходилось именно на
-        надёжность веб-сокета на PHP, но самым узким местом оказался парсинг и эмуляция действий пользователя.
-        Проблема закрылась, в том, что CURL требовал очень много процессорных вычислений при запросе, для решения этой проблемы
-        я перенёс требования вычислении в очередь задач, что позволило заметно снизить количество одновременных запросов.
-    </p>
-
-    <div class="container">
-
-        <div class="row">
-            <div class="column">
-                <a href="/dist/img/cs/13.png" target="_blank" title="Изображения кликабельны">
-                    <img src="/dist/img/cs/13.png" class="p-img">
-                </a>
-            </div>
-            <div class="column">
-                <a href="/dist/img/cs/14.png" target="_blank" title="Изображения кликабельны">
-                    <img src="/dist/img/cs/14.png" class="p-img">
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <p>
-        После реализации, заказчик оставил только положительные отзывы о работе
-        и для популизации попросил перевести сайт, на несколько языков и реализовать механизм постоянных игр,
-        с помощью заведомо ложных игроков.
-
-    </p>
-
-    <iframe src="//vk.com/video_ext.php?oid=80382062&id=456239028&hash=adf3e755e78cfffa&hd=2" width="100%" height="480" frameborder="0" allowfullscreen></iframe>
-
-
-
-
-
-
-</article>
-
-
-<!-- jQuery and files -->
-
-<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
-<script src="/dist/js/modaal.min.js"></script>
-<script src="/script.js"></script>
 
 
 <!-- Yandex.Metrika counter -->
