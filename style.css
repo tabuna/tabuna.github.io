@@ -16,5 +16,5 @@ ul {
   height: 50px;
   object-fit: cover;
   width: auto !important;
-  max-width: 65%;
+  max-width: 12rem;
 }
